@@ -1,0 +1,77 @@
+{
+  "siteTitle": "HYA KIDS – Thế giới trò chơi mầm non",
+  "games": [
+    {
+      "id": "game-01",
+      "name": "Nhìn hình đoán bóng",
+      "category": "Con vật",
+      "emoji": "🐻",
+      "description": "Rèn khả năng quan sát và nhận biết bóng con vật.",
+      "color": "#ffe2c7",
+      "url": ""
+    },
+    {
+      "id": "game-02",
+      "name": "Nhận biết hình học",
+      "category": "Hình khối",
+      "emoji": "🔺",
+      "description": "Khám phá hình tròn, hình vuông, hình tam giác.",
+      "color": "#e6dcff",
+      "url": ""
+    },
+    {
+      "id": "game-03",
+      "name": "Bé nhận biết màu sắc",
+      "category": "Màu sắc",
+      "emoji": "🎨",
+      "description": "Học và phân biệt những sắc màu vui nhộn.",
+      "color": "#ffe0ed",
+      "url": ""
+    },
+    {
+      "id": "game-04",
+      "name": "Bé học chữ số",
+      "category": "Chữ số",
+      "emoji": "🔢",
+      "description": "Làm quen và ghi nhớ các chữ số.",
+      "color": "#d9efff",
+      "url": ""
+    },
+    {
+      "id": "game-05",
+      "name": "Ô cửa bí mật",
+      "category": "Khám phá",
+      "emoji": "🎁",
+      "description": "Mở những ô cửa bất ngờ và học điều mới.",
+      "color": "#fff1bb",
+      "url": ""
+    },
+    {
+      "id": "game-06",
+      "name": "Qua đường an toàn",
+      "category": "Kỹ năng",
+      "emoji": "🚦",
+      "description": "Nhận biết các quy tắc giao thông phù hợp với trẻ.",
+      "color": "#d8f7e6",
+      "url": ""
+    },
+    {
+      "id": "game-07",
+      "name": "Bé ghép hình",
+      "category": "Tư duy",
+      "emoji": "🧩",
+      "description": "Ghép các mảnh hình và phát triển tư duy.",
+      "color": "#e8e2ff",
+      "url": ""
+    },
+    {
+      "id": "game-08",
+      "name": "Khám phá động vật",
+      "category": "Con vật",
+      "emoji": "🦁",
+      "description": "Gặp gỡ và tìm hiểu các bạn động vật.",
+      "color": "#ffe6d3",
+      "url": ""
+    }
+  ]
+}

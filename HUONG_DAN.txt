@@ -1,0 +1,17 @@
+HYA KIDS - BẢN ONLINE CÓ QUẢN TRỊ VIÊN
+
+1. Đây là phiên bản website DYNAMIC có Netlify Functions + Netlify Blobs. KHÔNG thể hoạt động đầy đủ bằng cách chỉ kéo thả ZIP lên Netlify Drop như một website tĩnh.
+2. Giải nén, đưa toàn bộ thư mục vào GitHub repository riêng của bạn.
+3. Trong Netlify chọn Add new project > Import an existing project > GitHub > chọn repo.
+4. Build command: npm install (hoặc npm ci sau khi tạo lockfile). Publish directory: . ; Functions directory: netlify/functions (đã có netlify.toml).
+5. Trong Project configuration > Environment variables tạo:
+   HYA_ADMIN_PASSWORD = mật khẩu quản trị mạnh do bạn tự chọn (không đặt trong mã nguồn)
+   HYA_SESSION_SECRET = chuỗi ngẫu nhiên dài >= 32 ký tự (khác mật khẩu quản trị)
+   Sau khi cấu hình cần deploy lại site.
+6. Vào link website > ⚙ Quản trị > nhập mật khẩu > thêm / sửa / xóa / đổi thứ tự game > Lưu lên website.
+7. Giáo viên chỉ mở link chung; không cần tài khoản. Mọi thay đổi lưu vào Netlify Blobs và không cần deploy lại.
+8. Để đổi mật khẩu: chỉnh environment variables rồi deploy lại. Đổi SECRET đồng thời buộc các phiên đăng nhập cũ hết hiệu lực.
+9. Danh sách mẫu ban đầu được lấy từ games.json. Sau khi lưu lần đầu, các thay đổi được giữ trong Netlify Blobs; bản games.json trong repo không tự cập nhật.
+10. Chỉ nhập URL HTTPS cho game. Đây là bản mẫu một quản trị viên, không có giới hạn lượt nhập sai phân tán; khi triển khai công khai rộng rãi nên bổ sung rate limiting/WAF và xác thực mạnh hơn (Netlify Identity, MFA).
+11. Thử nghiệm chức năng đăng nhập/lưu trực tiếp trên website Netlify sau deploy; không thể chạy đúng bằng cách mở index.html offline.
+12. Quan trọng: Người quản trị site Netlify/GitHub vẫn có quyền đối với hệ thống; tính năng này chỉ ngăn người truy cập link công khai sửa website.
