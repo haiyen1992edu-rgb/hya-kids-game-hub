@@ -1,6 +1,8 @@
 const c=require('./_common');
+const {connectLambda}=require('@netlify/blobs');
 exports.handler=async e=>{
  try{
+  connectLambda(e);
   if(e.httpMethod==='GET')return c.json(200,await c.read());
   if(e.httpMethod!=='PUT')return c.json(405,{error:'Phương thức không hỗ trợ'});
   if(!c.isAdmin(e))return c.json(401,{error:'Chỉ quản trị viên được sửa dữ liệu'});
